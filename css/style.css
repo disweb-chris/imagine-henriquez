@@ -1,0 +1,564 @@
+/* ----------RESET---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+header, .banner, .solutions, .about, .contact {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* ----------LAYOUT---------- */
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.3fr 1fr repeat(2, 0.5fr) 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:"header"
+                        "banner"
+                        "solutions"
+                        "about"
+                        "contact"
+                        "footer";
+}
+
+/* ----------HEADER---------- */
+
+header {
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu li{
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    border: rgba(106, 105, 105, 0.466) 1px solid;
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(106, 105, 105, 0.466);
+    border-radius: 20px;
+}
+
+.logo-home {
+    text-align: center;
+}
+
+/* ----------INDEX---------- */
+
+/* BANNER */
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    background-image: url(../img/home-banner.jpg);
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.banner h1, .banner h2 {
+    color: white;
+    font-size: 3.7rem;
+}
+
+.banner p {
+    color: white;
+}
+
+/* FIN BANNER */
+
+/* NUESTRAS SOLUCIONES */
+
+.solutions {
+    background-color: black;
+    grid-area: solutions;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.solutions h2, h3, p{
+    color: white;
+}
+
+.row-solutions span {
+    background-color: #e8336b;
+}
+
+.flex-solutions {
+    display: flex;
+    gap: 1%;
+}
+
+.flex-solutions h3 {
+    text-align: center;
+}
+
+.flex-solutions p {
+    text-align: center;
+}
+
+.item-solutions img {
+    padding-bottom: 25px;
+    display: block;
+    margin: auto;
+}
+
+/* FIN NUESTRAS SOLUCIONES */
+
+/* SOBRE NOSOTROS */
+
+.about {
+    background-color: black;
+    grid-area: about;
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.about h2, p, a {
+    color: white;
+}
+
+.about span {
+    background-color: #e8336b;
+}
+
+.about a {
+    padding: 13px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #6cbed4;
+}
+
+/* FIN SOBRE NOSOTROS */
+
+/* CONTACTO */
+
+.contact {
+    background-color: black;
+    grid-area: contact;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact h2, p {
+    color: white;
+}
+
+.contact p {
+    margin-top: 0.7%;
+    margin-bottom: 0.7%;
+}
+
+.form {
+    margin-top: 0.7%
+}
+
+.form p {
+    margin-bottom: 0.7%;
+}
+
+input {
+    display: block;
+    padding: 2%;
+    margin: 1% 1% 3%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.447);
+    border-color: rgba(128, 128, 128, 0.447);
+    color: white;
+}
+
+textarea {
+    display: block;
+    padding: 2%;
+    margin: 1% 1% 3%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.447);
+    border-color: rgba(128, 128, 128, 0.447);
+
+}
+
+.form ::placeholder {
+    color: white;
+}
+
+/* FIN CONTACTO */
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+}
+
+
+/* ------ MEDIA QUERIES  ----------*/
+
+@media screen and (max-width:1024px) {
+
+    .grid-container {
+        grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr;
+    }
+
+    .flex-solutions{
+        flex-wrap: wrap;
+        margin-top: 4%;
+    }
+
+    .flex-solutions img {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .item-solutions p{
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-bottom: 5%;
+    }
+
+    .about {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .form h2, .form p, input, textarea {
+        text-align: center;
+    }
+
+    .form p {
+        margin-bottom: 5%;
+    }
+
+    input, textarea {
+        width: 100%;
+    } 
+
+}
+
+@media screen and (max-width: 775px) {
+
+    .grid-container {
+        grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr;
+    }
+
+    header, .banner, .solutions, .about, .contac {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .menu a {
+        padding: 9px 4px;
+    }
+
+    .contact form {
+        padding-right: 3%;
+    }
+
+    footer img {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 704px) {
+
+    header .menu a {
+        font-size: 1rem;
+        padding: 6px 8px; 
+        margin: 5px;
+
+
+    }
+}
+
+/* ----------DESARROLLO WEB---------- */
+
+/* LAYOUT */
+
+.dev-web {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:"banner-dw"
+                        "service-dw";
+}
+
+/* BANNER */
+
+.banner-dw {
+    grid-area: banner-dw;
+    display: flex;
+    background-image: url(../img/home-dw.jpg);
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 2%;    
+}
+
+.banner-dw h1, .banner-dw h2 {
+    color: white;
+    font-size: 3.7rem;
+}
+
+.banner p {
+    color: white;
+} 
+
+/* FIN BANNER */
+
+
+/* SERVICE DESARROLLO WEB */
+
+.service-dw {
+    grid-area: service-dw;
+    display: flex;
+    padding: 5% 2%;    
+}
+
+.item-web {
+    width: 50%;
+}
+
+.item-web p, .item-web h3 {
+    padding: 5%;
+}
+
+/* FIN SERVICE DESARROLLO WEB */
+
+/* ------ MEDIA QUERIES DESARROLLO WEB ----------*/
+
+@media screen and (max-width:1024px) {
+
+    /* LAYOUT */
+
+.dev-web {
+    grid-template-rows: 0.8fr 0.3fr;
+
+}
+
+/* SERVICE DESARROLLO WEB */
+    
+    .service-dw {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .item-web {
+        width: 100%;
+    }
+
+    .item-web img {
+        width: 90%;
+        padding-left: 10%;
+    }
+}
+
+/* ---------- MARKETING DIGITAL ---------- */
+
+/* LAYOUT */
+
+.mkt-dig {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:"banner-mkt"
+                        "service-mkt-dig";
+}
+
+/* BANNER */
+
+.banner-mkt {
+    grid-area: banner-mkt;
+    display: flex;
+    background-image: url(../img/home-mkt.jpg);
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-mkt h1 {
+    color: white;
+    font-size: 3.7rem;
+}
+
+.banner-mkt h2 {
+    color: white;
+} 
+
+/* FIN BANNER */
+
+/* SERVICE MARKETING DIGITAL */
+
+.service-mkt-dig {
+    grid-area: service-mkt-dig;
+    display: flex;
+    padding: 5% 2%;
+    align-items: center;
+}
+
+.item-mkt {
+    width: 50%;
+}
+
+.mkt-img {
+    margin: auto;
+}
+
+.item-mkt p{
+    padding: 2% 5%;
+}
+
+.mkt-img img {
+    display: block;
+    margin: auto;
+}
+/* FIN SERVICE MARKETING DIGITAL */
+
+
+/* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
+
+@media screen and (max-width:1024px) {
+
+
+/* SERVICE DESARROLLO WEB */
+    
+    .service-mkt-dig {
+        flex-wrap: wrap;
+
+    }
+
+    .item-mkt {
+        width: 100%;
+    }
+
+}
+
+/* ---------- DISEÑO---------- */
+
+/* LAYOUT */
+
+.desing {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:"banner-design"
+                        "service-design";
+}
+
+/* BANNER */
+
+.banner-design {
+    grid-area: banner-design;
+    display: flex;
+    background-image: url(../img/home-desing.jpg);
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.banner-design h1 {
+    color: white;
+    font-size: 3.7rem;
+}
+
+.banner-design h2, .item-design h2 {
+    color: white;
+} 
+
+/* FIN BANNER */
+
+/* SERVICE MARKETING DIGITAL */
+
+.service-design {
+    grid-area: service-design;
+    display: flex;
+    padding: 5% 2%;
+    align-items: center;
+}
+
+.item-design {
+    width: 50%;
+}
+
+.design-img {
+    margin: auto;
+}
+
+.item-design p, .item-design h2{
+    padding: 2% 5%;
+}
+
+.mkt-design img {
+    display: block;
+    margin: auto;
+}
+/* FIN SERVICE MARKETING DIGITAL */
+
+/* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
+
+@media screen and (max-width:1024px) {
+
+
+    /* SERVICE DESIGN */
+        
+        .service-design {
+            flex-wrap: wrap;
+    
+        }
+    
+        .item-design {
+            width: 100%;
+        }
+}

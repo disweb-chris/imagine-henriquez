@@ -67,6 +67,14 @@ header {
     text-align: center;
 }
 
+/* Animations */
+
+.menu a:hover {
+    border: 2px solid #6cbdd494;
+    color: #6cbdd4
+}
+
+
 /* ----------INDEX---------- */
 
 /* BANNER */
@@ -127,6 +135,25 @@ header {
     margin: auto;
 }
 
+/* Animations */
+
+.latir {
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+}
+
+@keyframes latir {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* FIN NUESTRAS SOLUCIONES */
 
 /* SOBRE NOSOTROS */
@@ -156,6 +183,12 @@ header {
     display: inline-block;
     margin-top: 15px;
     background-color: #6cbed4;
+}
+
+/* Animations */
+
+.about a:hover {
+    color: black;
 }
 
 /* FIN SOBRE NOSOTROS */
@@ -211,6 +244,13 @@ textarea {
 
 .form ::placeholder {
     color: white;
+}
+
+/* Animations */
+
+.img-contact img:hover {
+    transform: scale(1.2);
+    transition: 3s;
 }
 
 /* FIN CONTACTO */

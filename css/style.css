@@ -195,7 +195,7 @@ h2 {
 
 /* CONTACTO */
 
-.contact {
+.contact-grid {
     background-color: black;
     grid-area: contact;
     display: flex;
@@ -203,11 +203,11 @@ h2 {
     align-items: center;
 }
 
-.contact h2, p {
+.contact-grid h2, p {
     color: white;
 }
 
-.contact p {
+.contact-grid p {
     margin-top: 0.7%;
     margin-bottom: 0.7%;
 }
@@ -257,7 +257,7 @@ textarea {
 
 /* FOOTER */
 
-footer {
+.footer-grid {
     background-color: black;
     grid-area: footer;
     display: flex;
@@ -265,7 +265,7 @@ footer {
     justify-content: center;
 }
 
-footer img {
+.footer-grid img {
     display: block;
     margin: auto;
 }

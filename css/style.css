@@ -14,7 +14,7 @@ h2 {
     font-size: 2.5rem;
 }
 
-header, .banner, .solutions, .about, .contact {
+.header-grid, .banner, .solutions, .about, .contact {
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -37,7 +37,7 @@ header, .banner, .solutions, .about, .contact {
 
 /* ----------HEADER---------- */
 
-header {
+.header-grid {
     background-color: black;
     grid-area: header;
     display: flex;
@@ -325,7 +325,7 @@ footer img {
         grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr;
     }
 
-    header, .banner, .solutions, .about, .contac {
+    .header-grid, .banner, .solutions, .about, .contac {
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -346,7 +346,7 @@ footer img {
 
 @media screen and (max-width: 704px) {
 
-    header .menu a {
+    .header-grid .menu a {
         font-size: 1rem;
         padding: 6px 8px; 
         margin: 5px;

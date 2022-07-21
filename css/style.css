@@ -48,7 +48,9 @@ h2 {
     width: 100%;
 }
 
-
+.offcanvas-body ul {
+    list-style-type: none;
+}
 
 .menu a {
     color: white;
@@ -61,9 +63,9 @@ h2 {
     border-radius: 20px;
 }
 
-.logo-home {
+/* .logo-home {
     text-align: center;
-}
+} */
 
 /* Animations */
 

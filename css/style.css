@@ -48,9 +48,7 @@ h2 {
     width: 100%;
 }
 
-.menu li{
-    display: inline;
-}
+
 
 .menu a {
     color: white;
@@ -559,7 +557,7 @@ textarea {
 
 /* FIN BANNER */
 
-/* SERVICE MARKETING DIGITAL */
+/* SERVICE DISEÑO */
 
 .service-design {
     grid-area: service-design;
@@ -584,14 +582,14 @@ textarea {
     display: block;
     margin: auto;
 }
-/* FIN SERVICE MARKETING DIGITAL */
+/* FIN SERVICE DISEÑO */
 
-/* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
+/* ------ MEDIA QUERIES DISEÑO ----------*/
 
 @media screen and (max-width:1024px) {
 
 
-    /* SERVICE DESIGN */
+    /* SERVICE DISEÑO */
         
         .service-design {
             flex-wrap: wrap;

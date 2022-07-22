@@ -602,3 +602,13 @@ textarea {
             width: 100%;
         }
 }
+
+/* ---------- CONTACTO---------- */
+
+.container-fluid {
+    background-color: black;
+}
+
+.banner-contact {
+    background-image: url(../img/home-contact.jpg);
+}

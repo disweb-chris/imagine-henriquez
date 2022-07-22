@@ -5,7 +5,12 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+            <!--Link CSS-->
             <link rel="stylesheet" href="css/style.css">
+            <!--Link Fontawesome-->
+            <script src="https://kit.fontawesome.com/2ef218c956.js" crossorigin="anonymous"></script>
             <link rel="shortcut icon" href="img/favicon.png">
             <title>Home - Imagine </title>
         </head>
@@ -15,24 +20,38 @@
 
                 <!--Header-->
                 <header class="header-grid">
-                    <div class="logo-home"> <!--Logo-->
+                    <div class="container-fluid">
+                        <div class="row d-flex align-items-center pt-2 pb-2">
+                    <div class="col logo-home"> <!--Logo-->
                         <a href="index.html"><img src="img/logo.png" alt="logo" width="26%"></a>
                     </div>
 
                     <!--Menu de navegación-->
-                    <div class="menu">
-                        <nav>
-                            <ul>
-                                <li><a href=""> Inicio </a></li>
-                                <li><a href="pages/desarrollo-web.html"> Desarrollo Web </a></li>
-                                <li><a href="pages/marketing-digital.html"> Marketing Digital </a></li>
-                                <li><a href="pages/diseno.html"> Diseño </a></li>
-                                <li><a href="pages/contacto.html"> Contacto </a></li>               
-                            </ul>
-                        </nav>
+                <div class="col menu d-flex justify-content-end ">
+                    <nav>
+
+                        <button class="btn  btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> Menu <i class="fas fa-bars"></i></button>
+        
+                        <div class="offcanvas offcanvas-end bg-dark bg-opacity-50" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header">
+                            
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul>
+                                    <li><a href=""> Inicio </a></li>
+                                    <li><a href="pages/desarrollo-web.html"> Desarrollo Web </a></li>
+                                    <li><a href="pages/marketing-digital.html"> Marketing Digital </a></li>
+                                    <li><a href="pages/diseno.html"> Diseño </a></li>
+                                    <li><a href="pages/contacto.html"> Contacto </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
                 <!-- Fin Menu de navegación-->
-
+                        </div>
+                    </div>
                 </header>
                 <!--Fin Header-->
 
@@ -139,5 +158,8 @@
                 <!--Fin Footer-->
             
         </div>
+
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -54,13 +54,12 @@ h2 {
 
 .menu a {
     color: white;
-    border: rgba(106, 105, 105, 0.466) 1px solid;
     padding: 10px 15px;
     margin: 10px;
     text-decoration: none;
     display: inline-block;
-    background-color: rgba(106, 105, 105, 0.466);
     border-radius: 20px;
+    font-size: 2rem;
 }
 
 /* .logo-home {

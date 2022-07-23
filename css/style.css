@@ -48,6 +48,10 @@ h2 {
     width: 100%;
 }
 
+.logo-home {
+    max-width: 230px;
+}
+
 .offcanvas-body ul {
     list-style-type: none;
 }
@@ -61,10 +65,6 @@ h2 {
     border-radius: 20px;
     font-size: 2rem;
 }
-
-/* .logo-home {
-    text-align: center;
-} */
 
 /* Animations */
 
@@ -139,7 +139,7 @@ h2 {
 .latir {
     animation-name: latir;
     animation-iteration-count: infinite;
-    animation-duration: 100s;
+    animation-duration: 50s;
     animation-timing-function: linear;
 }
 
@@ -163,6 +163,11 @@ h2 {
     display: flex;
     padding-top: 2%;
     padding-bottom: 2%;
+    align-items: center;
+}
+
+.text-about {
+    width: 60%;
 }
 
 .about h2, p, a {
@@ -173,15 +178,23 @@ h2 {
     background-color: #e8336b;
 }
 
-.about a {
-    padding: 13px 20px;
+.btn-about {
     border-radius: 20px;
-    color: white;
+    padding: 1% 2%;
+    border: #6cbdd494 2px solid;
+}
+
+.about a {
     text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #6cbed4;
+}
+
+.img-about {
+    width: 40%;
+}
+
+.about img {
+    display: block;
+    margin: auto;
 }
 
 /* Animations */
@@ -200,6 +213,9 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 3%;
 }
 
 .contact-grid h2, p {
@@ -297,7 +313,10 @@ textarea {
 
     .about {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+    }
+
+    .text-about, .img-about {
+        width: 100%;
     }
 
     .contact {
@@ -346,11 +365,22 @@ textarea {
 @media screen and (max-width: 704px) {
 
     .header-grid .menu a {
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 6px 8px; 
         margin: 5px;
+    }
+}
 
+@media screen and (max-width: 600px) {
 
+    .header-grid .menu a {
+        font-size: 1.5rem;
+        padding: 6px 8px; 
+        margin: 5px;
+    }
+
+    div#offcanvasScrolling {
+        right: -20%;
     }
 }
 
@@ -579,6 +609,15 @@ textarea {
     padding: 2% 5%;
 }
 
+.item-design i {
+    color: #e8336b;
+    font-size: 25px;
+}
+
+.item-design p {
+    margin-bottom: 0;
+}
+
 .mkt-design img {
     display: block;
     margin: auto;
@@ -593,8 +632,7 @@ textarea {
     /* SERVICE DISEÑO */
         
         .service-design {
-            flex-wrap: wrap;
-    
+            flex-wrap: wrap;    
         }
     
         .item-design {
@@ -610,4 +648,20 @@ textarea {
 
 .banner-contact {
     background-image: url(../img/home-contact.jpg);
+}
+
+/* ------ MEDIA QUERIES CONTACTO ----------*/
+
+@media screen and (max-width:1200px) {
+
+
+    /* FORM */
+        
+        .service-design {
+            flex-wrap: wrap;    
+        }
+    
+        .item-design {
+            width: 100%;
+        }
 }

@@ -514,7 +514,7 @@ textarea {
     align-items: center;
 }
 
-.item-mkt {
+.item-mkt, .mkt-img {
     width: 50%;
 }
 

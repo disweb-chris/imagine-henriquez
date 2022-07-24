@@ -7,10 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!--Link css-->
-        <link rel="stylesheet" href="../css/style.css">
+        <!--Link Animations-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--Link Fontawesome-->
         <script src="https://kit.fontawesome.com/2ef218c956.js" crossorigin="anonymous"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/favicon.png">
         <title>Contacto - Imagine</title>
     </head>
@@ -56,9 +58,9 @@
 
                 <!--Banner-->
                 <section class="row">
-                    <div class="banner-contact col d-flex flex-column justify-content-center" style="height: 600px">
-                        <h1 class="text-white">Contacto</h1>
-                        <h2 class="text-white">¿Tienes tu proyecto?</h2>
+                    <div class="banner-contact col d-flex flex-column justify-content-center flicker-in-1" style="height: 600px">
+                        <h1 class="text-white text-focus-in">Contacto</h1>
+                        <h2 class="text-white text-focus-in">¿Tienes tu proyecto?</h2>
                     </div>
                 </section>
                 <!--Fin Banner-->
@@ -68,7 +70,7 @@
                     
                     <div class="contact row d-flex align-items-center pt-5">
                         
-                        <div class="form col"> <!--Texto y Form-->
+                        <div class="form col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> <!--Texto y Form-->
 
                             <h2 class="text-white">TENGAMOS UNA CHARLA</h2>
 
@@ -112,6 +114,9 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
+        <!-- JavaScript animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>  AOS.init();    </script>
     </body>
 
 </html>

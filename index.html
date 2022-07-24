@@ -7,10 +7,12 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS only -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-            <!--Link CSS-->
-            <link rel="stylesheet" href="css/style.css">
+            <!--Link Animations-->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <!--Link Fontawesome-->
             <script src="https://kit.fontawesome.com/2ef218c956.js" crossorigin="anonymous"></script>
+            <!--Link CSS-->
+            <link rel="stylesheet" href="css/style.css">
             <link rel="shortcut icon" href="img/favicon.png">
             <title>Home - Imagine </title>
         </head>
@@ -56,10 +58,10 @@
                 <!--Fin Header-->
 
                 <!--Banner-->
-                <section class="banner">
-                    <p>IMAGINE</p>
-                    <h1>Desarrollo Web</h1>
-                    <h2>Marketing Digital</h2>
+                <section class="banner puff-in-center">
+                    <p class="text-focus-in">IMAGINE</p>
+                    <h1 class="text-focus-in">Desarrollo Web</h1>
+                    <h2 class="text-focus-in">Marketing Digital</h2>
                 </section>
                 <!--Fin Banner-->
 
@@ -74,7 +76,7 @@
 
                     <div class="flex-solutions">
                         <div class="item-solutions"> <!--Box de soluciones-->
-                            <a href="pages/desarrollo-web.html"><img src="img/img-solutions-desarrollo.png" alt="planeta rojo" width="50%" class="latir"></a>
+                            <a href="pages/desarrollo-web.html"><img src="img/img-solutions-desarrollo.png" alt="planeta rojo" width="50%" class="heartbeat"></a>
                             <h3>DESARROLLO WEB</h3>
                             <p>
                                 El correcto uso de las herramientas mas la experiencia y el conocimiento sobre como funcionan los negocios exitosos nos proporcionan una perspectiva única.
@@ -82,7 +84,7 @@
                         </div>
 
                         <div class="item-solutions"> <!--Box de soluciones-->
-                            <a href="pages/marketing-digital.html"><img src="img/img-solutions-marketing.png" alt="planeta azul" width="50%" class="latir"></a>
+                            <a href="pages/marketing-digital.html"><img src="img/img-solutions-marketing.png" alt="planeta azul" width="50%" class="heartbeat"></a>
                             <h3>MARKETING DIGITAL</h3>
                             <p>
                                 Nuestra experiencia en desarrollo web combinada con las mejores practicas sugeridas por Google, Facebook e Instragram nos permite realizar campañas exitosas.
@@ -90,7 +92,7 @@
                         </div>
 
                         <div class="item-solutions"> <!--Box de soluciones-->
-                            <a href="pages/diseno.html"><img src="img/img-solutions-diseno.png" alt="planeta azul" width="50%" class="latir"></a>
+                            <a href="pages/diseno.html"><img src="img/img-solutions-diseno.png" alt="planeta azul" width="50%" class="heartbeat"></a>
                             <h3>DISEÑO</h3>
                             <p>
                                 Aportamos a su negocio el diseño de elementos gráficos tales como flyers, banners, logos, fotografías, ayudando a desarrollar y mejorar su imagen corporativa.
@@ -114,7 +116,7 @@
                         <button type="button" class="btn btn-outline-info btn-about"><a href="pages/contacto.html">Contáctanos</a></button>
                     </div>
 
-                    <div class="img-about">                        
+                    <div class="img-about" data-aos="fade-up-left">                        
                         <img src="img/img-nosotros.png" alt="satelite del espacio" width="70%">
                     </div>
                 </section>
@@ -122,7 +124,7 @@
 
                 <!--Contacto-->
                 <section class="contact-grid"> 
-                    <div class="form"> <!--Texto y Form-->
+                    <div class="form" data-aos="zoom-in"> <!--Texto y Form-->
 
                         <h2>TENGAMOS UNA CHARLA</h2>
 
@@ -160,5 +162,9 @@
 
             <!-- JavaScript Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+            <!-- JavaScript animations -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>  AOS.init();    </script>
     </body>
 </html>

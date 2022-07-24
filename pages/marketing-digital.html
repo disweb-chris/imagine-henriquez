@@ -7,10 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!--Link CSS-->
-        <link rel="stylesheet" href="../css/style.css">
+        <!--Link Animations-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--Link Fontawesome-->
         <script src="https://kit.fontawesome.com/2ef218c956.js" crossorigin="anonymous"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/favicon.png">
         <title>Marketing Digital - Imagine</title>
     </head>
@@ -54,14 +56,14 @@
         <main class="mkt-dig">
 
             <!--Banner-->
-            <section class="banner-mkt">
-                    <h1>Marketing Digital</h1>
-                    <h2>Llevamos clientes a su empresa</h2>
+            <section class="banner-mkt puff-in-hor">
+                    <h1 class="text-focus-in">Marketing Digital</h1>
+                    <h2 class="text-focus-in">Llevamos clientes a su empresa</h2>
             </section>
             <!--Fin Banner-->
 
             <!--Descripcion del servicio-->
-            <section class="service-mkt-dig">
+            <section class="service-mkt-dig" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 
                     <div class="item-mkt">
                         <p>
@@ -73,7 +75,7 @@
                         </p>
                     </div>
 
-                    <div class="mkt-img"> <!--Box de Imagen-->
+                    <div class="mkt-img" data-aos="fade-up" data-aos-duration="3000"> <!--Box de Imagen-->
 
                         <img src="../img/astro-mkt.jpg" alt="astronauta con camara" width="100%"> 
 
@@ -90,7 +92,7 @@
                     <img class="img-contact-mkt" src="../img/astro-redes.png" alt="astronauta de traje blanco saltando con uno anillos rodeandolos" width="100%">
                 </div>
                     
-                <div class="form"> <!--Texto y Form-->
+                <div class="form" data-aos="fade-up-left"> <!--Texto y Form-->
 
                     <h2>TENGAMOS UNA CHARLA</h2>
 
@@ -122,6 +124,11 @@
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+        <!-- JavaScript animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>  AOS.init();    </script>
+
     </body>
 
 </html>

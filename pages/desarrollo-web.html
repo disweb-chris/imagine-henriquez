@@ -7,10 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!--Link CSS-->
-        <link rel="stylesheet" href="../css/style.css">
+        <!--Link Animations-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--Link Fontawesome-->
         <script src="https://kit.fontawesome.com/2ef218c956.js" crossorigin="anonymous"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/favicon.png">
         <title>Desarrollo Web - Imagine</title>
     </head>
@@ -55,10 +57,10 @@
 
                 <!--Banner-->
 
-                <section class="banner-dw">
-                        <h1>Diseño y</h1>
-                        <h2>Desarrollo Web</h2>
-                        <h3>Llevamos su negocio al siguiente nivel</h3>
+                <section class="banner-dw slide-in-blurred-right">
+                        <h1 class="text-focus-in">Diseño y</h1>
+                        <h2 class="text-focus-in">Desarrollo Web</h2>
+                        <h3 class="text-focus-in">Llevamos su negocio al siguiente nivel</h3>
                 </section>
                 <!--Fin Banner-->
 
@@ -66,19 +68,19 @@
                 <section class="service-dw">
 
                         <div class="item-web"> <!--Box de texto servicio-->
-                            <h3>SIN IMAGINE</h3>
-                            <p>
+                            <h3 class="text-shadow-pop-top">SIN IMAGINE</h3>
+                            <p data-aos="zoom-in-right">
                                 Cualquiera puede hacer un sitio web o un E-commerce, pero… ¿cuantos pueden hacer uno que funcione? ¿Y que venda? hace falta mucho mas que conocer una herramienta.
                             </p>
                         </div>
 
                         <div class="item-web"> <!--Box de imagen-->
-                            <img src="../img/img-dw.jpg" alt="chica con lentes en oficina" width="100%"> 
+                            <img src="../img/img-dw.jpg" alt="chica con lentes en oficina" width="100%" class="bounce-in-top"> 
                         </div>
 
                         <div class="item-web"> <!--Box de texto servicio-->
-                            <h3>CON IMAGINE</h3>
-                            <p>
+                            <h3 class="text-shadow-pop-top">CON IMAGINE</h3>
+                            <p data-aos="zoom-in-left">
                                 Nuestra experiencia y metodologías de trabajo nos permiten entregar proyectos en tiempos récord. En cada proyecto aportamos nuestra vision y experiencia para garantizar resultados positivos siempre.
                             </p>
                         </div>
@@ -91,7 +93,7 @@
                 <!--Contacto-->
                 <section class="contact-grid">
                     
-                        <div class="form"> <!--Texto y Form-->
+                        <div class="form" data-aos="zoom-in"> <!--Texto y Form-->
 
                             <h2>TENGAMOS UNA CHARLA</h2>
 
@@ -128,6 +130,11 @@
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+        <!-- JavaScript animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>  AOS.init();    </script>
+
     </body>
 
 </html>

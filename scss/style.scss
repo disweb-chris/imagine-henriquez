@@ -3,8 +3,6 @@
 @import "base/mixin";
 @import "base/maps";
 @import "base/extend";
-@import "base/mediaqueries";
-
 
 /* ----------RESET---------- */
 * {
@@ -12,10 +10,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Nunito;
-}
 
-p, h1, h2, h3, a {
-    color: $color-font;
+    p, h1, h2, h3, a {
+        color: $color-font;
+    }
 }
 
 /* ----------LAYOUT---------- */
@@ -28,7 +26,6 @@ p, h1, h2, h3, a {
         padding-right: $padding-layout;
     }
 }
-
 
 /* ----------HEADER---------- */
 

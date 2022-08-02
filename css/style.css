@@ -17,9 +17,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Nunito; }
-
-p, h1, h2, h3, a {
-  color: white; }
+  * p, * h1, * h2, * h3, * a {
+    color: white; }
 
 /* ----------LAYOUT---------- */
 .grid-container {

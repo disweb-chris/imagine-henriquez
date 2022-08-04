@@ -1,0 +1,37 @@
+
+@mixin contacto {
+
+    /* ---- Layout Contacto ---- */
+
+    background-color: $color-background;
+    grid-area: contact;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: $padding-layout;
+    padding-right: 3%;
+}
+
+@mixin form {
+
+    /* ---- Form ---- */
+
+    margin-top: 0.7%;
+
+        p {
+            margin-bottom: 0.7%;
+        }
+
+        input, textarea {
+            @extend %style-input;
+        }
+
+        ::placeholder {
+            color: $color-font;
+        }
+
+        input[type="submit"] {
+            color: white;
+        }
+}

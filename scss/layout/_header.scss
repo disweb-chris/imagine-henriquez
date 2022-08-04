@@ -1,0 +1,38 @@
+
+@mixin display-header {
+
+    /* ---------- Display Header ---------- */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+}
+
+@mixin menu-canvas {
+
+    /* Menu */
+
+    list-style-type: none;
+}
+
+@mixin enlaces {
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+// Animaciones
+
+@mixin animations-menu {
+
+    /* Animacion menu */
+
+        border: 2px solid #6cbdd494;
+        color: #6cbdd4;
+}

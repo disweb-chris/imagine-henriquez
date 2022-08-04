@@ -1,7 +1,3 @@
-/* ---------- Layout Page ---------- */
-/* ---------- Display Header ---------- */
-/* Menu */
-/* Banner */
 .contact-grid .form input, .contact-grid .form textarea {
   display: block;
   padding: 2%;
@@ -22,6 +18,7 @@
 
 /* ----------LAYOUT---------- */
 .grid-container {
+  /* ---------- Layout Page ---------- */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1.3fr 1fr repeat(2, 0.5fr) 0.1fr;
@@ -36,15 +33,16 @@
   background-color: black;
   height: 100%;
   width: 100%;
+  /* ---------- Display Header ---------- */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: header;
-  /* Menu */ }
+  grid-area: header; }
   .header-grid .logo-home {
     max-width: 230px; }
   .header-grid .offcanvas-body ul {
+    /* Menu */
     list-style-type: none; }
   .header-grid .menu a {
     color: white;
@@ -54,6 +52,10 @@
     display: inline-block;
     border-radius: 20px;
     font-size: 2rem; }
+  .header-grid .menu a:hover {
+    /* Animacion menu */
+    border: 2px solid #6cbdd494;
+    color: #6cbdd4; }
 
 /* ----------INDEX---------- */
 /* BANNER */
@@ -65,7 +67,8 @@
   flex-flow: column wrap;
   justify-content: center; }
   .banner h1, .banner h2 {
-    font-size: 3.7rem; }
+    font-size: 3.7rem;
+    color: white; }
 
 /* FIN BANNER */
 /* NUESTRAS SOLUCIONES */
@@ -94,7 +97,8 @@
   display: flex;
   padding-top: 2%;
   padding-bottom: 2%;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .about .text-about {
     width: 60%; }
     .about .text-about span {
@@ -105,6 +109,8 @@
       border: 2px solid #6cbdd4; }
       .about .text-about .btn-about a {
         text-decoration: none; }
+      .about .text-about .btn-about a:hover {
+        color: black; }
   .about .img-about {
     width: 40%; }
     .about .img-about img {
@@ -114,6 +120,7 @@
 /* FIN SOBRE NOSOTROS */
 /* CONTACTO */
 .contact-grid {
+  /* ---- Layout Contacto ---- */
   background-color: black;
   grid-area: contact;
   display: flex;
@@ -123,6 +130,7 @@
   padding-left: 2%;
   padding-right: 3%; }
   .contact-grid .form {
+    /* ---- Form ---- */
     margin-top: 0.7%; }
     .contact-grid .form p {
       margin-bottom: 0.7%; }
@@ -134,6 +142,7 @@
 /* FIN CONTACTO */
 /* FOOTER */
 .footer-grid {
+  /* ---------- Estilos del footer ---------- */
   background-color: black;
   grid-area: footer;
   display: flex;
@@ -143,8 +152,9 @@
     display: block;
     margin: auto; }
 
-/* ------ MEDIA QUERIES  ----------*/
+/* ------ MEDIA QUERIES HOME----------*/
 @media screen and (max-width: 1024px) {
+  /* HOME ---- MEDIA QUERIE 1024 px */
   .grid-container {
     grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr; }
     .grid-container .solutions .flex-solutions {
@@ -172,6 +182,7 @@
         width: 100%; } }
 
 @media screen and (max-width: 775px) {
+  /* HOME ---- MEDIA QUERIE 775 px */
   .grid-container {
     grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr; }
     .grid-container .header-grid, .grid-container .banner, .grid-container .solutions, .grid-container .about, .grid-container .contac {
@@ -183,15 +194,112 @@
       padding-right: 3%; } }
 
 @media screen and (max-width: 704px) {
+  /* HOME ---- MEDIA QUERIE 704 px */
   .header-grid .menu a {
     font-size: 2rem;
     padding: 6px 8px;
     margin: 5px; } }
 
 @media screen and (max-width: 600px) {
+  /* HOME ---- MEDIA QUERIE 600 px */
   .header-grid .menu a {
     font-size: 1.5rem;
     padding: 6px 8px;
     margin: 5px; }
   div#offcanvasScrolling {
     right: -20%; } }
+
+/* Animaciones Home */
+.puff-in-center {
+  -webkit-animation: puff-in-center 1s cubic-bezier 0.47, 0, 0.745, 0.715 both; }
+
+/* ---------- PAGINA DESARROLLO WEB ---------- */
+/* LAYOUT DES-WEB */
+.dev-web {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "banner-dw" "service-dw";
+  /* BANNER DES-WEB */ }
+  .dev-web .banner-dw {
+    grid-area: banner-dw;
+    background-image: url(../img/home-dw.jpg);
+    padding-left: 2%;
+    display: flex;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* FIN BANNER DES-WEB */ }
+    .dev-web .banner-dw h1, .dev-web .banner-dw h2 {
+      font-size: 3.7rem;
+      color: white; }
+  .dev-web .service-dw {
+    /* SERVICE DESARROLLO WEB */
+    grid-area: service-dw;
+    display: flex;
+    padding: 5% 2%; }
+    .dev-web .service-dw .item-web {
+      width: 50%; }
+      .dev-web .service-dw .item-web p, .dev-web .service-dw .item-web h3 {
+        padding: 5%;
+        /* FIN SERVICE DESARROLLO WEB */ }
+
+/* ------ MEDIA QUERIES DESARROLLO WEB----------*/
+@media screen and (max-width: 1024px) {
+  /* DESARROLLO WEB ---- MEDIA QUERIE 1024 px */
+  /* LAYOUT */
+  .dev-web {
+    grid-template-rows: 0.8fr 0.3fr;
+    /* SERVICE DESARROLLO WEB */ }
+    .dev-web .service-dw {
+      flex-wrap: wrap;
+      padding-bottom: 0; }
+      .dev-web .service-dw .item-web {
+        width: 100%; }
+      .dev-web .service-dw .item-web img {
+        width: 90%;
+        padding-left: 10%; } }
+
+/* ---------- MARKETING DIGITAL ---------- */
+/* LAYOUT MKT */
+.mkt-dig {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "banner-mkt" "service-mkt-dig";
+  /* BANNER MKT */ }
+  .mkt-dig .banner-mkt {
+    grid-area: banner-mkt;
+    background-image: url(../img/home-mkt.jpg);
+    padding-left: 2%;
+    display: flex;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* FIN BANNER MKT */ }
+    .mkt-dig .banner-mkt h1, .mkt-dig .banner-mkt h2 {
+      font-size: 3.7rem;
+      color: white; }
+  .mkt-dig .service-mkt-dig {
+    /* SERVICE MARKETING DIGITAL */
+    grid-area: service-mkt-dig;
+    display: flex;
+    padding: 5% 2%;
+    align-items: center; }
+    .mkt-dig .service-mkt-dig .item-mkt, .mkt-dig .service-mkt-dig .mkt-img {
+      width: 50%; }
+    .mkt-dig .service-mkt-dig .item-mkt p {
+      padding: 2% 5%; }
+    .mkt-dig .service-mkt-dig .mkt-img {
+      margin: auto; }
+      .mkt-dig .service-mkt-dig .mkt-img img {
+        display: block;
+        margin: auto;
+        /* FIN SERVICE MARKETING DIGITAL */ }
+
+/* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/

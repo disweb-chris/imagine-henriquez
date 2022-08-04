@@ -1,0 +1,143 @@
+// Banner
+
+@mixin banner {
+    display: flex;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    h1, h2 {
+        font-size: $font-banner;
+        color: $color-font;
+    }
+}
+
+// Solutions
+
+@mixin solutions {
+    background-color: $color-background;
+    grid-area: solutions;
+    padding-top: $padding-layout;
+    padding-bottom: $padding-layout;
+}
+
+// About
+
+@mixin about {
+    background-color: $color-background;
+    grid-area: about;
+    display: flex;
+    padding-top: $padding-layout;
+    padding-bottom: $padding-layout;
+    align-items: center;
+    overflow: hidden;
+}
+
+// Medias Queries
+
+@mixin home-1024 {
+
+    /* HOME ---- MEDIA QUERIE 1024 px */
+
+    .grid-container {
+        grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr;
+
+        .solutions .flex-solutions{
+            flex-wrap: wrap;
+            margin-top: 4%;
+
+            img {
+                width: 40%;
+                display: block;
+                margin: auto;
+            }
+
+            .item-solutions p{
+                padding-left: 20%;
+                padding-right: 20%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .about {
+            flex-wrap: wrap;
+
+            .text-about, .img-about {
+                width: 100%;
+            }
+        }
+
+        .contact-grid {
+            flex-wrap: wrap;
+
+            .form h2, .form p, .form input, .form textarea {
+                text-align: center;
+            }
+
+            .form p {
+                margin-bottom: 5%;
+            }
+
+            .form input, .form textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@mixin home-775 {
+
+    /* HOME ---- MEDIA QUERIE 775 px */
+
+    .grid-container {
+        grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr;
+
+        .header-grid, .banner, .solutions, .about, .contac {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .header-grid .menu a {
+            padding: 9px 4px;
+        }
+
+        .contact form {
+            padding-right: 3%;
+        }
+    }
+}
+
+
+@mixin home-704 {
+
+    /* HOME ---- MEDIA QUERIE 704 px */
+
+    .header-grid .menu a {
+        font-size: 2rem;
+        padding: 6px 8px;
+        margin: 5px;
+    }
+}
+
+
+@mixin home-600 {
+
+    /* HOME ---- MEDIA QUERIE 600 px */
+    
+    .header-grid .menu a {
+        font-size: 1.5rem;
+        padding: 6px 8px;
+        margin: 5px;
+    }
+
+    div#offcanvasScrolling {
+        right: -20%;
+    }
+}
+
+// Animaciones
+
+@mixin puff-in-center ($puff, $cubic-1, $cubic-2, $cubic-3, $cubic-4){
+    -webkit-animation: puff-in-center $puff cubic-bezier (($cubic-1, $cubic-2, $cubic-3, $cubic-4)) both;
+}

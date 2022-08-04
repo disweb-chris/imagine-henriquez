@@ -1,0 +1,15 @@
+
+@mixin grid {
+
+    /* ---------- Layout Page ---------- */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.3fr 1fr repeat(2, 0.5fr) 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:"header"
+                        "banner"
+                        "solutions"
+                        "about"
+                        "contact"
+                        "footer";
+}

@@ -1,0 +1,41 @@
+// Layout 
+
+@mixin dev-web {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:"banner-dw"
+                        "service-dw";
+}
+
+// Medias Queries
+
+@mixin dw-1024 {
+    
+    /* DESARROLLO WEB ---- MEDIA QUERIE 1024 px */
+
+    /* LAYOUT */
+
+    .dev-web {
+        grid-template-rows: 0.8fr 0.3fr;
+
+        /* SERVICE DESARROLLO WEB */
+
+        .service-dw {
+            flex-wrap: wrap;
+            padding-bottom: 0;
+
+            .item-web {
+                width: 100%;
+            }
+
+            .item-web img {
+                width: 90%;
+                padding-left: 10%;
+            }
+        }
+    }
+}
+

@@ -9,6 +9,7 @@
 @import "layout/contacto";
 @import "views/desweb";
 @import "views/mkt";
+@import "views/design";
 
 /* ----------RESET---------- */
 * {
@@ -185,12 +186,6 @@
     @include home-600;
 }
 
-/* Animaciones Home */
-
-.puff-in-center {
-    @include puff-in-center (1s, 0.470, 0.000, 0.745, 0.715);
-}
-
 /* ---------- PAGINA DESARROLLO WEB ---------- */
 
 /* LAYOUT DES-WEB */
@@ -237,7 +232,7 @@
         @include dw-1024;
 }
 
-/* ---------- MARKETING DIGITAL ---------- */
+/* ---------- PAGINA MARKETING DIGITAL ---------- */
 
 /* LAYOUT MKT */
 
@@ -285,3 +280,144 @@
 
 /* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
 
+@media screen and (max-width:1024px) {
+
+
+    /* SERVICE MARKETING DIGITAL */
+    
+        .service-mkt-dig {
+            flex-wrap: wrap;
+    
+        }
+    
+        .item-mkt {
+            width: 100%;
+        }
+    
+    }
+
+/* ---------- PAGINA DISEÑO ---------- */
+
+/* LAYOUT DISEÑO */
+
+.desing {
+    @include design;
+
+    /* BANNER DISEÑO */
+
+    .banner-design {
+        grid-area: banner-design;
+        background-image: url(../img/home-desing.jpg);
+        padding-left: $padding-layout;
+
+        @include banner;
+
+        /* FIN BANNER DISEÑO */
+    }
+
+    .service-design {
+
+        /* SERVICE DISEÑO */
+
+        @include service-design;
+
+        .item-design {
+            width: 50%;
+
+            p, h2 {
+                padding: $padding-layout 5%;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            i {
+                color: nth($colores, 3);
+                font-size: 25px;
+            }
+        }
+        
+        .design-img {
+            margin: auto;
+        }
+
+        .mkt-design img {
+            display: block;
+            margin: auto;
+        /* FIN SERVICE DISEÑO */
+        }
+    }
+}
+
+/* ------ MEDIA QUERIES DISEÑO ----------*/
+
+@media screen and (max-width:1024px) {
+
+    /* SERVICE DISEÑO */
+    
+        .service-design {
+            flex-wrap: wrap;
+    
+        }
+    
+        .item-design {
+            width: 100%;
+        }    
+    }
+
+/* ---------- PAGINA CONTACTO ---------- */
+
+/* LAYOUT CONTACTO */
+
+.container-fluid {
+    background-color: $color-background;
+    padding-left: $padding-layout;
+    padding-right: $padding-layout;
+
+    header {
+
+        .logo-home {
+            max-width: $logo-header;
+        }
+
+        // Menu
+
+        .offcanvas-body ul {
+            @include menu-canvas;
+        }
+    
+        .menu a {
+            @include enlaces;
+        }
+    
+        .menu a:hover {
+            @include animations-menu;
+        }
+    }
+
+    .banner-contact {
+        background-image: url(../img/home-contact.jpg);
+    }
+
+    .form {
+        
+        @include form;
+    }
+}
+
+/* ------ MEDIA QUERIES CONTACTO ----------*/
+
+@media screen and (max-width:1200px) {
+
+
+    /* FORM */
+
+        .service-design {
+            flex-wrap: wrap;
+        }
+
+        .item-design {
+            width: 100%;
+        }
+}

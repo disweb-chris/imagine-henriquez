@@ -1,0 +1,20 @@
+// Layout 
+
+@mixin design {
+    background-color: $color-background;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:"banner-design"
+                        "service-design";
+}
+
+// Service DISEÑO
+
+@mixin service-design {
+    grid-area: service-design;
+    display: flex;
+    padding: 5% 2%;
+    align-items: center;
+}

@@ -1,4 +1,5 @@
-.contact-grid .form input, .contact-grid .form textarea {
+@charset "UTF-8";
+.contact-grid .form input, .contact-grid .form textarea, .container-fluid .form input, .container-fluid .form textarea {
   display: block;
   padding: 2%;
   margin: 1% 1% 3%;
@@ -209,10 +210,6 @@
   div#offcanvasScrolling {
     right: -20%; } }
 
-/* Animaciones Home */
-.puff-in-center {
-  -webkit-animation: puff-in-center 1s cubic-bezier 0.47, 0, 0.745, 0.715 both; }
-
 /* ---------- PAGINA DESARROLLO WEB ---------- */
 /* LAYOUT DES-WEB */
 .dev-web {
@@ -262,7 +259,7 @@
         width: 90%;
         padding-left: 10%; } }
 
-/* ---------- MARKETING DIGITAL ---------- */
+/* ---------- PAGINA MARKETING DIGITAL ---------- */
 /* LAYOUT MKT */
 .mkt-dig {
   background-color: black;
@@ -303,3 +300,104 @@
         /* FIN SERVICE MARKETING DIGITAL */ }
 
 /* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
+@media screen and (max-width: 1024px) {
+  /* SERVICE MARKETING DIGITAL */
+  .service-mkt-dig {
+    flex-wrap: wrap; }
+  .item-mkt {
+    width: 100%; } }
+
+/* ---------- PAGINA DISEÑO ---------- */
+/* LAYOUT DISEÑO */
+.desing {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "banner-design" "service-design";
+  /* BANNER DISEÑO */ }
+  .desing .banner-design {
+    grid-area: banner-design;
+    background-image: url(../img/home-desing.jpg);
+    padding-left: 2%;
+    display: flex;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* FIN BANNER DISEÑO */ }
+    .desing .banner-design h1, .desing .banner-design h2 {
+      font-size: 3.7rem;
+      color: white; }
+  .desing .service-design {
+    /* SERVICE DISEÑO */
+    grid-area: service-design;
+    display: flex;
+    padding: 5% 2%;
+    align-items: center; }
+    .desing .service-design .item-design {
+      width: 50%; }
+      .desing .service-design .item-design p, .desing .service-design .item-design h2 {
+        padding: 2% 5%; }
+      .desing .service-design .item-design p {
+        margin-bottom: 0; }
+      .desing .service-design .item-design i {
+        color: #e8336b;
+        font-size: 25px; }
+    .desing .service-design .design-img {
+      margin: auto; }
+    .desing .service-design .mkt-design img {
+      display: block;
+      margin: auto;
+      /* FIN SERVICE DISEÑO */ }
+
+/* ------ MEDIA QUERIES DISEÑO ----------*/
+@media screen and (max-width: 1024px) {
+  /* SERVICE DISEÑO */
+  .service-design {
+    flex-wrap: wrap; }
+  .item-design {
+    width: 100%; } }
+
+/* ---------- PAGINA CONTACTO ---------- */
+/* LAYOUT CONTACTO */
+.container-fluid {
+  background-color: black;
+  padding-left: 2%;
+  padding-right: 2%; }
+  .container-fluid header .logo-home {
+    max-width: 230px; }
+  .container-fluid header .offcanvas-body ul {
+    /* Menu */
+    list-style-type: none; }
+  .container-fluid header .menu a {
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 2rem; }
+  .container-fluid header .menu a:hover {
+    /* Animacion menu */
+    border: 2px solid #6cbdd494;
+    color: #6cbdd4; }
+  .container-fluid .banner-contact {
+    background-image: url(../img/home-contact.jpg); }
+  .container-fluid .form {
+    /* ---- Form ---- */
+    margin-top: 0.7%; }
+    .container-fluid .form p {
+      margin-bottom: 0.7%; }
+    .container-fluid .form ::placeholder {
+      color: white; }
+    .container-fluid .form input[type="submit"] {
+      color: white; }
+
+/* ------ MEDIA QUERIES CONTACTO ----------*/
+@media screen and (max-width: 1200px) {
+  /* FORM */
+  .service-design {
+    flex-wrap: wrap; }
+  .item-design {
+    width: 100%; } }

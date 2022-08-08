@@ -25,7 +25,7 @@
   grid-template-rows: 0.1fr 1.3fr 1fr repeat(2, 0.5fr) 0.1fr;
   gap: 0px 0px;
   grid-template-areas: "header" "banner" "solutions" "about" "contact" "footer"; }
-  .grid-container .header-grid, .grid-container .banner, .grid-container .solutions, .grid-container .about, .grid-container .contact {
+  .grid-container .banner, .grid-container .solutions, .grid-container .about, .grid-container .contact {
     padding-left: 2%;
     padding-right: 2%; }
 
@@ -39,7 +39,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: header; }
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
   .header-grid .logo-home {
     max-width: 230px; }
   .header-grid .offcanvas-body ul {
@@ -152,8 +155,37 @@
   .footer-grid img {
     display: block;
     margin: auto; }
+  .footer-grid img {
+    max-width: 230px; }
 
 /* ------ MEDIA QUERIES HOME----------*/
+@media (max-width: 1292px) and (min-width: 1025px) {
+  /* HOME ---- MEDIA QUERIE 1292 px */
+  .grid-container {
+    grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr; }
+    .grid-container .solutions .flex-solutions {
+      flex-wrap: wrap;
+      margin-top: 4%; }
+      .grid-container .solutions .flex-solutions img {
+        width: 30%;
+        display: block;
+        margin: auto; }
+      .grid-container .solutions .flex-solutions p {
+        padding-left: 10%;
+        padding-right: 10%; }
+    .grid-container .about {
+      flex-wrap: wrap; }
+      .grid-container .about .text-about, .grid-container .about .img-about {
+        width: 100%; }
+      .grid-container .about .img-about {
+        width: 50%;
+        margin: auto;
+        display: block; }
+    .grid-container .contact-grid h2, .grid-container .contact-grid p {
+      text-align: center; }
+    .grid-container .contact-grid input, .grid-container .contact-grid textarea {
+      margin: 20px auto 10px auto; } }
+
 @media screen and (max-width: 1024px) {
   /* HOME ---- MEDIA QUERIE 1024 px */
   .grid-container {
@@ -173,6 +205,8 @@
       flex-wrap: wrap; }
       .grid-container .about .text-about, .grid-container .about .img-about {
         width: 100%; }
+      .grid-container .about .img-about img {
+        width: 50%; }
     .grid-container .contact-grid {
       flex-wrap: wrap; }
       .grid-container .contact-grid .form h2, .grid-container .contact-grid .form p, .grid-container .contact-grid .form input, .grid-container .contact-grid .form textarea {
@@ -186,20 +220,31 @@
   /* HOME ---- MEDIA QUERIE 775 px */
   .grid-container {
     grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr; }
-    .grid-container .header-grid, .grid-container .banner, .grid-container .solutions, .grid-container .about, .grid-container .contac {
+    .grid-container .header-grid, .grid-container .banner, .grid-container .solutions, .grid-container .about {
       padding-left: 3%;
       padding-right: 3%; }
     .grid-container .header-grid .menu a {
       padding: 9px 4px; }
-    .grid-container .contact form {
-      padding-right: 3%; } }
+    .grid-container .contact-grid .form {
+      padding-left: 2%;
+      padding-right: 2%; } }
 
 @media screen and (max-width: 704px) {
   /* HOME ---- MEDIA QUERIE 704 px */
   .header-grid .menu a {
     font-size: 2rem;
     padding: 6px 8px;
-    margin: 5px; } }
+    margin: 5px; }
+  .grid-container .banner h1, .grid-container .banner h2, .grid-container .banner p, .grid-container .solutions h2, .grid-container .solutions p, .grid-container .about h2, .grid-container .about p {
+    text-align: center; }
+  .grid-container .about .btn-about {
+    display: block;
+    margin: auto; }
+  .grid-container .contact-grid .form {
+    padding-left: 2%;
+    padding-right: 2%; }
+    .grid-container .contact-grid .form input {
+      color: white; } }
 
 @media screen and (max-width: 600px) {
   /* HOME ---- MEDIA QUERIE 600 px */
@@ -208,7 +253,17 @@
     padding: 6px 8px;
     margin: 5px; }
   div#offcanvasScrolling {
-    right: -20%; } }
+    right: -20%; }
+  .grid-container .banner h1, .grid-container .banner h2, .grid-container .banner p, .grid-container .solutions h2, .grid-container .solutions p, .grid-container .about h2, .grid-container .about p {
+    text-align: center; }
+  .grid-container .about .btn-about {
+    display: block;
+    margin: auto; }
+  .grid-container .contact-grid .form {
+    padding-left: 2%;
+    padding-right: 2%; }
+    .grid-container .contact-grid .form input {
+      color: white; } }
 
 /* ---------- PAGINA DESARROLLO WEB ---------- */
 /* LAYOUT DES-WEB */
@@ -244,7 +299,42 @@
         /* FIN SERVICE DESARROLLO WEB */ }
 
 /* ------ MEDIA QUERIES DESARROLLO WEB----------*/
+@media (max-width: 1292px) and (min-width: 1025px) {
+  /* DESARROLLO WEB ---- MEDIA QUERIE 1292 px */
+  /* LAYOUT */
+  .dev-web {
+    /* SERVICE DESARROLLO WEB */ }
+    .dev-web .service-dw {
+      flex-wrap: wrap;
+      padding-bottom: 0; }
+      .dev-web .service-dw .item-web {
+        width: 100%; }
+        .dev-web .service-dw .item-web h3, .dev-web .service-dw .item-web p {
+          padding: 2%; }
+      .dev-web .service-dw .item-web img {
+        width: 40%;
+        display: block;
+        margin: auto; }
+  .contact-grid {
+    flex-wrap: wrap; }
+    .contact-grid .form h2, .contact-grid .form p, .contact-grid .form input, .contact-grid .form textarea {
+      text-align: center; }
+    .contact-grid .form p {
+      margin-bottom: 5%; }
+    .contact-grid .form textarea, .contact-grid .form input {
+      margin: 20px auto 10px auto;
+      width: 95%; } }
+
 @media screen and (max-width: 1024px) {
+  .contact-grid {
+    flex-wrap: wrap; }
+    .contact-grid .form h2, .contact-grid .form p, .contact-grid .form input, .contact-grid .form textarea {
+      text-align: center; }
+    .contact-grid .form p {
+      margin-bottom: 5%; }
+    .contact-grid .form textarea, .contact-grid .form input {
+      margin: 20px auto 10px auto;
+      width: 95%; }
   /* DESARROLLO WEB ---- MEDIA QUERIE 1024 px */
   /* LAYOUT */
   .dev-web {
@@ -256,8 +346,9 @@
       .dev-web .service-dw .item-web {
         width: 100%; }
       .dev-web .service-dw .item-web img {
-        width: 90%;
-        padding-left: 10%; } }
+        width: 60%;
+        margin: auto;
+        display: block; } }
 
 /* ---------- PAGINA MARKETING DIGITAL ---------- */
 /* LAYOUT MKT */
@@ -300,12 +391,27 @@
         /* FIN SERVICE MARKETING DIGITAL */ }
 
 /* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
+@media (max-width: 1292px) and (min-width: 1025px) {
+  /* MARKETING DIGITAL ---- MEDIA QUERIE 1292 px */
+  .mkt-dig .service-mkt-dig {
+    flex-flow: column-reverse wrap; }
+    .mkt-dig .service-mkt-dig .item-mkt, .mkt-dig .service-mkt-dig .mkt-img {
+      width: 100%; }
+    .mkt-dig .service-mkt-dig .mkt-img img {
+      width: 65%; } }
+
 @media screen and (max-width: 1024px) {
-  /* SERVICE MARKETING DIGITAL */
-  .service-mkt-dig {
-    flex-wrap: wrap; }
-  .item-mkt {
-    width: 100%; } }
+  /* MARKETING DIGITAL ---- MEDIA QUERIE 1024 px */
+  .mkt-dig .banner-mkt h1, .mkt-dig .banner-mkt h2 {
+    font-size: 2.5rem; }
+  .mkt-dig .banner-mkt h2 {
+    text-align: center; }
+  .mkt-dig .service-mkt-dig {
+    flex-flow: column-reverse wrap; }
+    .mkt-dig .service-mkt-dig .item-mkt {
+      width: 100%; }
+    .mkt-dig .service-mkt-dig .mkt-img {
+      width: 90%; } }
 
 /* ---------- PAGINA DISEÑO ---------- */
 /* LAYOUT DISEÑO */
@@ -352,12 +458,28 @@
       /* FIN SERVICE DISEÑO */ }
 
 /* ------ MEDIA QUERIES DISEÑO ----------*/
+@media (max-width: 1292px) and (min-width: 1025px) {
+  .contact-grid {
+    flex-wrap: wrap; }
+    .contact-grid .form h2, .contact-grid .form p, .contact-grid .form input, .contact-grid .form textarea {
+      text-align: center; }
+    .contact-grid .form p {
+      margin-bottom: 5%; }
+    .contact-grid .form textarea, .contact-grid .form input {
+      margin: 20px auto 10px auto;
+      width: 95%; } }
+
 @media screen and (max-width: 1024px) {
   /* SERVICE DISEÑO */
-  .service-design {
-    flex-wrap: wrap; }
-  .item-design {
-    width: 100%; } }
+  .desing .service-design {
+    flex-flow: column-reverse wrap; }
+    .desing .service-design .item-design {
+      width: 100%; } }
+
+@media screen and (max-width: 803px) {
+  /* DISEÑO ---- MEDIA QUERIE 803 px */
+  .desing .banner-design h1, .desing .banner-design h2 {
+    font-size: 2.5rem; } }
 
 /* ---------- PAGINA CONTACTO ---------- */
 /* LAYOUT CONTACTO */
@@ -393,11 +515,36 @@
       color: white; }
     .container-fluid .form input[type="submit"] {
       color: white; }
+  .container-fluid footer .logo-footer {
+    max-width: 230px; }
 
 /* ------ MEDIA QUERIES CONTACTO ----------*/
-@media screen and (max-width: 1200px) {
-  /* FORM */
-  .service-design {
+@media (max-width: 1292px) and (min-width: 1025px) {
+  .container-fluid .contact {
     flex-wrap: wrap; }
-  .item-design {
-    width: 100%; } }
+    .container-fluid .contact .form {
+      width: 100%; }
+      .container-fluid .contact .form h2, .container-fluid .contact .form p, .container-fluid .contact .form input, .container-fluid .contact .form textarea {
+        text-align: center; }
+      .container-fluid .contact .form p {
+        margin-bottom: 5%; }
+      .container-fluid .contact .form textarea, .container-fluid .contact .form input {
+        margin: 20px auto 10px auto;
+        width: 95%; }
+    .container-fluid .contact .img-contact {
+      width: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  .container-fluid .contact {
+    flex-wrap: wrap; }
+    .container-fluid .contact .form {
+      width: 100%; }
+      .container-fluid .contact .form h2, .container-fluid .contact .form p, .container-fluid .contact .form input, .container-fluid .contact .form textarea {
+        text-align: center; }
+      .container-fluid .contact .form p {
+        margin-bottom: 5%; }
+      .container-fluid .contact .form textarea, .container-fluid .contact .form input {
+        margin: 20px auto 10px auto;
+        width: 95%; }
+    .container-fluid .contact .img-contact {
+      width: 100%; } }

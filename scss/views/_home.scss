@@ -35,6 +35,53 @@
 
 // Medias Queries
 
+@mixin home-1292 {
+
+    /* HOME ---- MEDIA QUERIE 1292 px */
+
+    .grid-container {
+        grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr;
+
+        .solutions .flex-solutions{
+            flex-wrap: wrap;
+            margin-top: 4%;
+
+            img {
+                width: 30%;
+                display: block;
+                margin: auto;
+            }
+
+            p {
+                padding-left: $padding-layout*5;
+                padding-right: $padding-layout*5;
+            }
+        }
+
+        .about {
+            flex-wrap: wrap;
+
+            .text-about, .img-about {
+                width: 100%;
+            }
+
+            .img-about {
+                width: 50%;
+                margin: auto;
+                display: block;
+            }
+        }
+
+        .contact-grid h2, .contact-grid p {
+            text-align: center;
+        }
+
+        .contact-grid input, .contact-grid textarea {
+            margin: 20px auto 10px auto;
+        }
+    }
+}
+
 @mixin home-1024 {
 
     /* HOME ---- MEDIA QUERIE 1024 px */
@@ -65,6 +112,10 @@
             .text-about, .img-about {
                 width: 100%;
             }
+
+            .img-about img {
+                width: 50%;
+            }
         }
 
         .contact-grid {
@@ -85,7 +136,6 @@
     }
 }
 
-
 @mixin home-775 {
 
     /* HOME ---- MEDIA QUERIE 775 px */
@@ -93,7 +143,7 @@
     .grid-container {
         grid-template-rows: 0.1fr 0.4fr 0.6fr 0.8fr 0.8fr 0.1fr;
 
-        .header-grid, .banner, .solutions, .about, .contac {
+        .header-grid, .banner, .solutions, .about {
             padding-left: 3%;
             padding-right: 3%;
         }
@@ -102,12 +152,12 @@
             padding: 9px 4px;
         }
 
-        .contact form {
-            padding-right: 3%;
+        .contact-grid .form {
+            padding-left: $padding-layout;
+            padding-right: $padding-layout;
         }
     }
 }
-
 
 @mixin home-704 {
 
@@ -117,6 +167,27 @@
         font-size: 2rem;
         padding: 6px 8px;
         margin: 5px;
+    }
+
+    .grid-container{
+
+        .banner h1, .banner h2, .banner p, .solutions h2, .solutions p, .about h2, .about p {
+            text-align: center;
+        }
+
+        .about .btn-about {
+            display: block;
+            margin: auto;
+        }
+
+        .contact-grid .form {
+            padding-left: $padding-layout;
+            padding-right: $padding-layout;
+
+            input {
+                color: white;
+            }
+        }
     }
 }
 
@@ -133,6 +204,27 @@
 
     div#offcanvasScrolling {
         right: -20%;
+    }
+
+    .grid-container{
+
+        .banner h1, .banner h2, .banner p, .solutions h2, .solutions p, .about h2, .about p {
+            text-align: center;
+        }
+
+        .about .btn-about {
+            display: block;
+            margin: auto;
+        }
+
+        .contact-grid .form {
+            padding-left: $padding-layout;
+            padding-right: $padding-layout;
+
+            input {
+                color: white;
+            }
+        }
     }
 }
 

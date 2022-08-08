@@ -18,3 +18,17 @@
     padding: 5% 2%;
     align-items: center;
 }
+
+// Medias Queries
+
+@mixin design-803 {
+
+    /* DISEÑO ---- MEDIA QUERIE 803 px */
+
+    .desing {
+
+        .banner-design h1, .banner-design h2 {
+            font-size: $font-h2;
+        }
+    }
+}

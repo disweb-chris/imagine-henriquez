@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 @mixin menu-canvas {

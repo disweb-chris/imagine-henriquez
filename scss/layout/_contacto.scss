@@ -35,3 +35,54 @@
             color: white;
         }
 }
+
+@mixin queries-contact {
+
+    .contact-grid {
+        flex-wrap: wrap;
+
+        .form h2, .form p, .form input, .form textarea {
+            text-align: center;
+        }
+
+        .form p {
+            margin-bottom: 5%;            
+        }
+
+        .form textarea, .form input {
+            margin: 20px auto 10px auto;
+            width: 95%;
+        }
+    }
+}
+
+@mixin queries-contact-bootstrap {
+
+    .container-fluid {
+
+        .contact {
+            flex-wrap: wrap;
+
+            .form {
+                width: 100%;
+
+                h2, p, input, textarea {
+                    text-align: center;
+                }
+        
+                p {
+                    margin-bottom: 5%;            
+                }
+        
+                textarea, input {
+                    margin: 20px auto 10px auto;
+                    width: 95%;
+                }
+            }    
+
+            .img-contact {
+                width: 100%;
+            }
+        }
+    }
+}

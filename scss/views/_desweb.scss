@@ -12,6 +12,37 @@
 
 // Medias Queries
 
+@mixin dw-1292 {
+    
+    /* DESARROLLO WEB ---- MEDIA QUERIE 1292 px */
+
+    /* LAYOUT */
+
+    .dev-web {
+
+        /* SERVICE DESARROLLO WEB */
+
+        .service-dw {
+            flex-wrap: wrap;
+            padding-bottom: 0;
+
+            .item-web {
+                width: 100%;
+
+                h3, p {
+                    padding: 2%;
+                }
+            }
+
+            .item-web img {
+                width: 40%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
 @mixin dw-1024 {
     
     /* DESARROLLO WEB ---- MEDIA QUERIE 1024 px */
@@ -32,8 +63,9 @@
             }
 
             .item-web img {
-                width: 90%;
-                padding-left: 10%;
+                width: 60%;
+                margin: auto;
+                display: block;
             }
         }
     }

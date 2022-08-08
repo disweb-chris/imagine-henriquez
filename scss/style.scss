@@ -28,7 +28,7 @@
 .grid-container {
     @include grid;
 
-    .header-grid, .banner, .solutions, .about, .contact {
+    .banner, .solutions, .about, .contact {
         padding-left: $padding-layout;
         padding-right: $padding-layout;
     }
@@ -162,9 +162,18 @@
 .footer-grid {
     
     @include footer;
+    
+    img {
+        max-width: $logo-header;
+    }
 }
 
 /* ------ MEDIA QUERIES HOME----------*/
+
+@media (max-width:1292px) and (min-width:1025px) {
+
+        @include home-1292;
+}
 
 @media screen and (max-width:1024px) {
     
@@ -225,10 +234,19 @@
     }
 }
 
+
+
 /* ------ MEDIA QUERIES DESARROLLO WEB----------*/
+
+@media (max-width:1292px) and (min-width:1025px) {
+
+    @include dw-1292;
+    @include queries-contact;
+}
 
 @media screen and (max-width:1024px) {
 
+        @include queries-contact;
         @include dw-1024;
 }
 
@@ -280,21 +298,15 @@
 
 /* ------ MEDIA QUERIES MARKETING DIGITAL ----------*/
 
+@media (max-width:1292px) and (min-width:1025px) {
+
+    @include mkt-1292;
+}
+
 @media screen and (max-width:1024px) {
 
-
-    /* SERVICE MARKETING DIGITAL */
-    
-        .service-mkt-dig {
-            flex-wrap: wrap;
-    
-        }
-    
-        .item-mkt {
-            width: 100%;
-        }
-    
-    }
+    @include mkt-1024;
+}
 
 /* ---------- PAGINA DISEÑO ---------- */
 
@@ -352,19 +364,28 @@
 
 /* ------ MEDIA QUERIES DISEÑO ----------*/
 
+@media (max-width:1292px) and (min-width:1025px) {
+
+    @include queries-contact;
+}
+
 @media screen and (max-width:1024px) {
 
     /* SERVICE DISEÑO */
     
-        .service-design {
-            flex-wrap: wrap;
-    
+        .desing .service-design {
+            flex-flow: column-reverse wrap;   
+            
+            .item-design {
+                width: 100%;
+            }   
         }
-    
-        .item-design {
-            width: 100%;
-        }    
     }
+
+@media screen and (max-width:803px) {
+
+    @include design-803;
+}
 
 /* ---------- PAGINA CONTACTO ---------- */
 
@@ -404,20 +425,20 @@
         
         @include form;
     }
+
+    footer .logo-footer {
+        max-width: $logo-header;
+    }
 }
 
 /* ------ MEDIA QUERIES CONTACTO ----------*/
 
-@media screen and (max-width:1200px) {
+@media (max-width:1292px) and (min-width:1025px) {
 
+    @include queries-contact-bootstrap;
+}
 
-    /* FORM */
+@media screen and (max-width:1024px) {
 
-        .service-design {
-            flex-wrap: wrap;
-        }
-
-        .item-design {
-            width: 100%;
-        }
+    @include queries-contact-bootstrap;
 }

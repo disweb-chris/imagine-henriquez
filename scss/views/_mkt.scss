@@ -34,3 +34,51 @@
     align-items: center;
 }
 
+// Medias Queries
+
+@mixin mkt-1292 {
+
+    /* MARKETING DIGITAL ---- MEDIA QUERIE 1292 px */
+
+    .mkt-dig .service-mkt-dig {
+        flex-flow: column-reverse wrap;
+
+        .item-mkt, .mkt-img {
+            width: 100%;
+        }
+
+        .mkt-img img {
+            width: 65%;
+        }
+    }
+}
+
+@mixin mkt-1024 {
+
+    /* MARKETING DIGITAL ---- MEDIA QUERIE 1024 px */
+    
+    .mkt-dig {
+
+        .banner-mkt h1, .banner-mkt h2 {
+            font-size: $font-h2;
+        }
+
+        .banner-mkt h2 {
+            text-align: center;
+        }
+
+        .service-mkt-dig {
+
+            flex-flow: column-reverse wrap;
+                
+            .item-mkt {
+                width: 100%;
+            }
+
+            .mkt-img {
+                width: 90%;
+            }
+        }  
+    }    
+}
+

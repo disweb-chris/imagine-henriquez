@@ -53,6 +53,10 @@
 
     // Menu
 
+    .offcanvas-body {
+        backdrop-filter: blur(15px);
+    }
+
     .offcanvas-body ul {
         @include menu-canvas;
     }
@@ -85,11 +89,16 @@
     
     @include solutions;
 
-    .row-solutions span {
-        background-color: nth($colores, 3);
+    .row-solutions {
+        width: 70%;
+
+        span {
+            background-color: nth($colores, 3);
+    }    
     }
 
     .flex-solutions {
+        padding-top: $padding-layout;
         display: flex;
         gap: $gap;
 
@@ -408,6 +417,10 @@
 
         // Menu
 
+        .offcanvas-body {
+            backdrop-filter: blur(15px);
+        }
+
         .offcanvas-body ul {
             @include menu-canvas;
         }
@@ -446,3 +459,5 @@
 
     @include queries-contact-bootstrap;
 }
+
+@import "base/animatios"

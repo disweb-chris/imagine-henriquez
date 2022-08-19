@@ -30,7 +30,7 @@
     padding-top: $padding-layout;
     padding-bottom: $padding-layout;
     align-items: center;
-    overflow: hidden;
+    
 }
 
 // Medias Queries
@@ -41,22 +41,29 @@
 
     .grid-container {
         grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr;
+        
+        .solutions {
 
-        .solutions .flex-solutions{
-            flex-wrap: wrap;
-            margin-top: 4%;
-
-            img {
-                width: 30%;
-                display: block;
-                margin: auto;
+            .row-solutions {
+                width: 100%;
             }
 
-            p {
-                padding-left: $padding-layout*5;
-                padding-right: $padding-layout*5;
+            .flex-solutions{
+                flex-wrap: wrap;
+                margin-top: 4%;
+    
+                img {
+                    width: 30%;
+                    display: block;
+                    margin: auto;
+                }
+    
+                p {
+                    padding-left: $padding-layout*5;
+                    padding-right: $padding-layout*5;
+                }
             }
-        }
+        }     
 
         .about {
             flex-wrap: wrap;
@@ -89,20 +96,27 @@
     .grid-container {
         grid-template-rows: 0.1fr 0.5fr 0.6fr 0.4fr 0.7fr 0.1fr;
 
-        .solutions .flex-solutions{
-            flex-wrap: wrap;
-            margin-top: 4%;
+        .solutions {
 
-            img {
-                width: 40%;
-                display: block;
-                margin: auto;
+            .row-solutions {
+                width: 100%;
             }
 
-            .item-solutions p{
-                padding-left: 20%;
-                padding-right: 20%;
-                margin-bottom: 5%;
+            .flex-solutions{
+                flex-wrap: wrap;
+                margin-top: 4%;
+    
+                img {
+                    width: 40%;
+                    display: block;
+                    margin: auto;
+                }
+    
+                .item-solutions p{
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    margin-bottom: 5%;
+                }
             }
         }
 
@@ -114,7 +128,7 @@
             }
 
             .img-about img {
-                width: 50%;
+                width: 90%;
             }
         }
 
@@ -226,10 +240,4 @@
             }
         }
     }
-}
-
-// Animaciones
-
-@mixin puff-in-center ($puff, $cubic-1, $cubic-2, $cubic-3, $cubic-4){
-    -webkit-animation: puff-in-center $puff cubic-bezier (($cubic-1, $cubic-2, $cubic-3, $cubic-4)) both;
 }

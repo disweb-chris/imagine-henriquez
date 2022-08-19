@@ -13,9 +13,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Nunito; }
+  font-family: 'Nunito', sans-serif; }
   * p, * h1, * h2, * h3, * a {
     color: white; }
+  * p {
+    font-size: 1.1rem; }
 
 /* ----------LAYOUT---------- */
 .grid-container {

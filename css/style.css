@@ -49,9 +49,14 @@
     max-width: 230px; }
   .header-grid .offcanvas-body {
     backdrop-filter: blur(15px); }
-  .header-grid .offcanvas-body ul {
-    /* Menu */
-    list-style-type: none; }
+    .header-grid .offcanvas-body ul {
+      /* Menu */
+      list-style-type: none; }
+    .header-grid .offcanvas-body i {
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 2rem;
+      color: white; }
   .header-grid .menu a {
     color: white;
     padding: 10px 15px;

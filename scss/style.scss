@@ -55,10 +55,17 @@
 
     .offcanvas-body {
         backdrop-filter: blur(15px);
-    }
 
-    .offcanvas-body ul {
-        @include menu-canvas;
+        ul {
+            @include menu-canvas;
+        }
+
+        i {
+            padding: 10px 15px;
+            margin: 10px;
+            font-size: 2rem;
+            color: white;
+        }
     }
 
     .menu a {

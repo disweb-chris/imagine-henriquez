@@ -86,3 +86,17 @@
         }
     }
 }
+
+@mixin whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color: nth($colores, 1);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:40px;
+    z-index:100;
+}

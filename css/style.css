@@ -153,6 +153,20 @@
       color: white; }
     .contact-grid .form input[type="submit"] {
       color: white; }
+  .contact-grid .whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #6cbdd4;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 100; }
+    .contact-grid .whatsapp i {
+      margin-top: 10px; }
 
 /* FIN CONTACTO */
 /* FOOTER */
@@ -533,6 +547,20 @@
       color: white; }
     .container-fluid .form input[type="submit"] {
       color: white; }
+  .container-fluid .whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #6cbdd4;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 100; }
+    .container-fluid .whatsapp i {
+      margin-top: 10px; }
   .container-fluid footer .logo-footer {
     max-width: 230px; }
 
@@ -701,3 +729,22 @@
     transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -o-transform: rotate(2deg); } }
+
+/* Animations Whatsapp */
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -moz-animation: scale-up-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -o-animation: scale-up-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-up-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }

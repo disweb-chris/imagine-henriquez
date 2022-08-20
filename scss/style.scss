@@ -173,6 +173,15 @@
         
         @include form;
     }
+
+    .whatsapp {
+        
+        @include whatsapp;
+
+        i {
+            margin-top:10px;
+        }
+    }
 }
 
 /* FIN CONTACTO */
@@ -253,7 +262,6 @@
         }
     }
 }
-
 
 
 /* ------ MEDIA QUERIES DESARROLLO WEB----------*/
@@ -450,6 +458,15 @@
         @include form;
     }
 
+    .whatsapp {
+        
+        @include whatsapp;
+
+        i {
+            margin-top:10px;
+        }
+    }
+
     footer .logo-footer {
         max-width: $logo-header;
     }
@@ -467,4 +484,4 @@
     @include queries-contact-bootstrap;
 }
 
-@import "base/animatios"
+@import "base/animations";

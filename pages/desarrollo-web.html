@@ -15,6 +15,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <!--Link Image Comparision-->
+        <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
         <!--Meta-->
         <meta name="description" content="Empresa de desarrollo web. Diseño de páginas web en Argentina. E-commerce. Desarrollo de tiendas online. Creamos páginas que venden!">
         <meta name="keywords" content="Wordpress, HTML, Agencia, Desarrollo Web, E-commerce, Diseño Web">
@@ -65,7 +68,7 @@
 
                 <!--Banner-->
 
-                <section class="banner-dw slide-in-blurred-right">
+                <section class="banner-dw">
                         <h1 class="text-focus-in">Diseño y</h1>
                         <h2 class="text-focus-in">Desarrollo Web</h2>
                         <h3 class="text-focus-in">Llevamos su negocio al siguiente nivel</h3>
@@ -76,14 +79,17 @@
                 <section class="service-dw">
 
                         <div class="item-web"> <!--Box de texto servicio-->
-                            <h3 class="text-shadow-pop-top">SIN IMAGINE</h3>
+                            <h3>SIN IMAGINE</h3>
                             <p data-aos="zoom-in-right">
                                 Cualquiera puede hacer un sitio web o un E-commerce, pero… ¿cuantos pueden hacer uno que funcione? ¿Y que venda? hace falta mucho mas que conocer una herramienta.
                             </p>
                         </div>
 
                         <div class="item-web"> <!--Box de imagen-->
-                            <img src="../img/img-dw.jpg" alt="chica con lentes en oficina" width="100%" class="bounce-in-top"> 
+                            <img-comparison-slider hover="hover">
+                            <img slot="first" width="100%" src="../img/after-dw.jpg">
+                            <img slot="second" width="100%" src="../img/before-dw.jpg">
+                            </img-comparison-slider>
                         </div>
 
                         <div class="item-web"> <!--Box de texto servicio-->
@@ -127,7 +133,12 @@
                             <img src="../img/astro-redes.png" alt="astronauta de traje blanco saltando con uno anillos rodeandolos" width="100%">
                         </div>
 
+                        <div class="whatsapp scale-up-center">
+                            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F2ctbeb&e=ATO1MZQrryFrfrmTttmW78Lwx6L5yinp1qMdjCEZjLIVb93O1A5BAtn6Xu1U8JbwHigIcd-WNVZ-ey6jB8Xw56k_9lUJdxvG&s=1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+
                     </section>
+
                 <!--Fin de contacto-->
 
             <!--Footer-->
